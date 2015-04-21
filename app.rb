@@ -12,8 +12,16 @@ get '/' do
   erb :index
 end
 
+get '/variables' do
+	erb :variables
+end
+
 get '/api' do
 	erb :api
+end
+
+get '/variables/submit' do
+	erb :submit
 end
 
 # RESTful api
