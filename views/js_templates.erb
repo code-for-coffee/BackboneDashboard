@@ -1,0 +1,18 @@
+<script type="text/template" id="stuff">
+<article>
+  <h2><%%= title %></h2>
+  <h3><%%= subheader %></h3>
+
+  <p><%%= message %></p>
+
+  <button value='<%%= value_for_button %>'></button>
+
+  <img src='<%%= img_src %>' alt='<%%= alt_text %>'>
+</article>
+</script>
+
+<script type="text/template" id="message">
+  <section>
+    @<%%= username %> <%%= timestamp %> <%%= message %>
+  </section>
+</script>

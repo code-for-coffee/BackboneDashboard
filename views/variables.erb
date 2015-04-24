@@ -8,30 +8,13 @@
   <script type="text/javascript" src="/scripts/underscore.js"></script>
   <script type="text/javascript" src="/scripts/backbone.js"></script>
   <script type="text/javascript" src="/scripts/app.js"></script>
+  <script type="text/javascript" src="/scripts/variables.js"></script>
 </head>
 <body>
-  <script type="text/template" id="stuff">
-  <article>
-  	<h2><%%= title %></h2>
-  	<h3><%%= subheader %></h3>
 
-  	<p><%%= message %></p>
+  <%= erb :js_templates %>
 
-  	<button value='<%%= value_for_button %>'></button>
 
-  	<img src='<%%= img_src %>' alt='<%%= alt_text %>'>
-  </article>
-  </script>
-
-  <script type="text/javascript">
-  $(document).ready(function() {
-    // some data object
-    var data = { title: "using templates with jQuery", subheader: "working it", message: "don't forget to escape characters with double percents", value_for_button: "some button goes here", img_src: "http://www.vetprofessionals.com/catprofessional/images/home-cat.jpg", alt_text: "students linked this"}
-    // make my template
-    var template = _.template($('#stuff').html());
-    // write template to body's html
-    $('body').html(template(data));
-  });
 
   </script>
 </body>
